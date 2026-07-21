@@ -1,0 +1,279 @@
+/* ===========================
+   Google Font
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#fffaf9;
+    color:#333;
+}
+
+/* ===========================
+   Navigation
+=========================== */
+
+header{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+    background:white;
+    box-shadow:0 2px 15px rgba(0,0,0,0.08);
+}
+
+.navbar{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    height:80px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:700;
+    color:#c2185b;
+}
+
+.logo span{
+    color:#111;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:35px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#c2185b;
+}
+
+/* ===========================
+   Hero
+=========================== */
+
+.hero{
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    background:linear-gradient(rgba(255,255,255,.75),
+    rgba(255,255,255,.75)),
+    url("https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1600&q=80");
+
+    background-size:cover;
+    background-position:center;
+
+    padding:20px;
+}
+
+.hero-content{
+    max-width:700px;
+}
+
+.hero h1{
+    font-size:60px;
+    color:#222;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    color:#666;
+    margin-bottom:40px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 40px;
+    background:#c2185b;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    transition:.3s;
+    font-weight:600;
+}
+
+.btn:hover{
+    background:#880e4f;
+    transform:translateY(-5px) scale(1.05);
+    box-shadow:0 10px 25px rgba(194,24,91,.4);
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:40px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.nav-links{
+    display:none;
+}
+
+.about{
+
+    flex-direction:column;
+
+}
+
+.about-content{
+
+    text-align:center;
+
+}
+}
+
+/* ===========================
+   About Section
+=========================== */
+
+.about{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:100px auto;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+
+}
+
+.about-image{
+
+    flex:1;
+
+}
+
+.about-image img{
+
+    width:100%;
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
+
+.about-content{
+
+    flex:1;
+
+}
+
+.about-content h2{
+
+    font-size:42px;
+    margin-bottom:20px;
+
+}
+
+.about-content p{
+
+    color:#666;
+    line-height:1.8;
+    margin-bottom:20px;
+
+}
+
+/*==========================
+      Services
+===========================*/
+
+.services{
+
+    width:90%;
+    max-width:1200px;
+    margin:100px auto;
+    text-align:center;
+
+}
+
+.services h2{
+
+    font-size:42px;
+    margin-bottom:50px;
+
+}
+
+.service-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+
+}
+
+.service-card{
+
+    background:white;
+    padding:40px 25px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.icon{
+
+    font-size:55px;
+
+    margin-bottom:20px;
+
+}
+
+.service-card h3{
+
+    margin-bottom:15px;
+
+}
+
+.service-card p{
+
+    color:#666;
+    line-height:1.7;
+
+}
