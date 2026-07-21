@@ -1,10 +1,26 @@
-// Welcome message
-console.log("Luxury Salon Website Loaded!");
+const menuButton = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
 
-// Select button
+menuButton.addEventListener("click", () => {
+
+    navLinks.classList.toggle("active");
+
+    const expanded =
+        menuButton.getAttribute("aria-expanded") === "true";
+
+    menuButton.setAttribute("aria-expanded", !expanded);
+
+    if (navLinks.classList.contains("active")) {
+        menuButton.innerHTML = "✕";
+    } else {
+        menuButton.innerHTML = "☰";
+    }
+
+});
+
+// Existing button alert
 const button = document.querySelector(".btn");
 
-// Click Event
-button.addEventListener("click", function () {
+button.addEventListener("click", () => {
     alert("Booking feature coming soon!");
 });
