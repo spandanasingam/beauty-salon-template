@@ -343,3 +343,43 @@ header{
 .service-card:hover::before{
     transform:scaleX(1);
 }
+
+/* ===========================
+   Gallery
+=========================== */
+
+.gallery{
+    width:90%;
+    max-width:1200px;
+    margin:100px auto;
+    text-align:center;
+}
+
+.gallery h2{
+    font-size:42px;
+    margin-bottom:50px;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.gallery-item{
+    overflow:hidden;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+}
+
+.gallery-item img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    display:block;
+    transition:transform .4s ease;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.12);
+}
