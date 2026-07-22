@@ -149,3 +149,57 @@ document.addEventListener("keydown", (event) => {
     }
 
 });
+
+
+//================ Scroll To Top =================//
+
+const scrollBtn = document.getElementById("scrollTopBtn");
+
+window.addEventListener("scroll", () => {
+
+    if(window.scrollY > 300){
+
+        scrollBtn.style.display = "flex";
+
+        scrollBtn.style.justifyContent = "center";
+
+        scrollBtn.style.alignItems = "center";
+
+    }
+
+    else{
+
+        scrollBtn.style.display = "none";
+
+    }
+
+});
+
+scrollBtn.addEventListener("click", () => {
+
+    window.scrollTo({
+
+        top:0,
+
+        behavior:"smooth"
+
+    });
+
+});
+
+const header = document.querySelector("header");
+
+window.addEventListener("scroll",()=>{
+
+    if(window.scrollY>50){
+
+        header.classList.add("sticky");
+
+    }else{
+
+        header.classList.remove("sticky");
+
+    }
+
+});
+

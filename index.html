@@ -102,7 +102,7 @@
         Services
 ==========================-->
 
-<section id="services" class="reveal">
+<section id="services" class="services reveal">
 
     <h2 class="section-title">
     Our Signature Services
@@ -110,7 +110,7 @@
 <p class="section-subtitle">
 Experience premium beauty treatments delivered by skilled professionals.
 </p>
-    <div class="service-container">
+    <div class="services-grid">
 
         <div class="service-card">
 
@@ -253,52 +253,81 @@ Experience premium beauty treatments delivered by skilled professionals.
     </div>
 </section>
 
-<section class="testimonials reveal">
+<section id="testimonials" class="testimonials reveal">
 
-    <h2 class="section-title">
-    What Our Clients Say
-</h2>
+    <h2 class="section-title">What Our Clients Say</h2>
+
+    <p class="section-subtitle">
+        Trusted by hundreds of happy clients who love our premium beauty services.
+    </p>
 
     <div class="testimonial-grid">
 
-        <article class="testimonial-card">
+        <div class="testimonial-card">
 
-            <img src="assets/images/client1.jpg" alt="Client">
+            <img
+        src="assets/images/testimonials/client1.jpg"
+        alt="Priya Sharma"
+        class="client-image"
+    >
 
-            <h3>Sarah Johnson</h3>
+            <div class="stars">
+                ★★★★★
+            </div>
 
-            <p>
-                "Amazing experience! The staff is friendly,
-                and I absolutely loved my new hairstyle."
+            <p class="testimonial-text">
+                "LUXE Studio completely transformed my bridal look. The team was professional, friendly, and exceeded my expectations."
             </p>
 
-        </article>
+            <h4>Priya Sharma</h4>
 
-        <article class="testimonial-card">
+            <span>Bride</span>
 
-            <img src="assets/images/client2.jpg" alt="Client">
+        </div>
 
-            <h3>Emily Brown</h3>
+        <div class="testimonial-card">
 
-            <p>
-                "The best salon I've ever visited.
-                Highly recommended!"
+            <img
+        src="assets/images/testimonials/client2.jpg"
+        alt="Ananya Reddy"
+        class="client-image"
+    >
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p class="testimonial-text">
+                "The spa treatment was incredibly relaxing. I left feeling refreshed and confident. Highly recommended!"
             </p>
 
-        </article>
+            <h4>Ananya Reddy</h4>
 
-        <article class="testimonial-card">
+            <span>Regular Client</span>
 
-            <img src="assets/images/client3.jpg" alt="Client">
+        </div>
 
-            <h3>Jessica Lee</h3>
+        <div class="testimonial-card">
 
-            <p>
-                "Professional service and beautiful results.
-                I'll definitely come back!"
+            <img
+        src="assets/images/testimonials/client3.jpg"
+        alt="Sneha Patel"
+        class="client-image"
+    >
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p class="testimonial-text">
+                "Excellent service, modern salon, and wonderful staff. I always look forward to my appointments."
             </p>
 
-        </article>
+            <h4>Sneha Patel</h4>
+
+            <span>Working Professional</span>
+
+        </div>
 
     </div>
 
@@ -306,39 +335,95 @@ Experience premium beauty treatments delivered by skilled professionals.
 
 
 
+<!-- ==========================
+     CONTACT SECTION
+========================== -->
+
 <section id="contact" class="contact reveal">
 
     <h2 class="section-title">Book Your Appointment</h2>
 
     <p class="section-subtitle">
-        We'd love to hear from you. Fill out the form below and we'll get back to you as soon as possible.
+        We'd love to hear from you. Fill out the form below and we'll get back to
+        you as soon as possible.
     </p>
 
     <div class="contact-container">
 
+        <!-- Contact Information -->
         <div class="contact-info">
 
             <h3>Visit Our Studio</h3>
 
-            <p>📍 Hyderabad, Telangana</p>
+            <div class="info-box">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <h4>Address</h4>
+                    <p>Hyderabad, Telangana</p>
+                </div>
+            </div>
 
-            <p>📞 +91 98765 43210</p>
+            <div class="info-box">
+                <i class="fas fa-phone"></i>
+                <div>
+                    <h4>Phone</h4>
+                    <p>+91 98765 43210</p>
+                </div>
+            </div>
 
-            <p>✉️ hello@luxestudio.com</p>
+            <div class="info-box">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <h4>Email</h4>
+                    <p>hello@luxestudio.com</p>
+                </div>
+            </div>
 
-            <p>🕒 Mon - Sun : 9:00 AM - 8:00 PM</p>
+            <div class="info-box">
+                <i class="fas fa-clock"></i>
+                <div>
+                    <h4>Working Hours</h4>
+                    <p>Mon – Sun</p>
+                    <p>9:00 AM – 8:00 PM</p>
+                </div>
+            </div>
 
         </div>
 
-        <form>
+        <!-- Contact Form -->
+        <form class="contact-form">
 
-            <input type="text" placeholder="Your Name" required>
+            <input
+                type="text"
+                placeholder="Your Name"
+                required
+            >
 
-            <input type="email" placeholder="Email Address" required>
+            <input
+                type="email"
+                placeholder="Email Address"
+                required
+            >
 
-            <textarea placeholder="Your Message"></textarea>
+            <select required>
+                <option value="">Select a Service</option>
+                <option>Hair Styling</option>
+                <option>Luxury Spa</option>
+                <option>Bridal Makeup</option>
+                <option>Skin Care</option>
+                <option>Nail Art</option>
+                <option>Hair Coloring</option>
+            </select>
 
-            <button class="btn">Send Message</button>
+            <textarea
+                placeholder="Your Message"
+                rows="6"
+                required
+            ></textarea>
+
+            <button type="submit" class="btn">
+                Book Appointment
+            </button>
 
         </form>
 
@@ -346,21 +431,62 @@ Experience premium beauty treatments delivered by skilled professionals.
 
 </section>
 
-<footer>
+<footer class="footer">
 
-    <div class="footer-content">
+    <div class="footer-container">
 
-        <h3>LUXE Studio</h3>
+        <div class="footer-col">
+            <h3>LUXE Studio</h3>
 
-        <p>
-            Luxury Beauty • Hair • Makeup • Nail Studio
-        </p>
+            <p>
+                Bringing beauty, confidence and elegance together with
+                premium salon and spa services.
+            </p>
+        </div>
 
-        <p class="copyright">
+        <div class="footer-col">
 
-            © 2026 LUXE Studio. All Rights Reserved.
+            <h4>Quick Links</h4>
 
-        </p>
+            <ul>
+
+                <li><a href="#home">Home</a></li>
+
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#services">Services</a></li>
+
+                <li><a href="#gallery">Gallery</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h4>Follow Us</h4>
+
+            <div class="social-icons">
+
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                <a href="#"><i class="fab fa-youtube"></i></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        © 2026 LUXE Studio. All Rights Reserved.
 
     </div>
 
@@ -377,6 +503,12 @@ Experience premium beauty treatments delivered by skilled professionals.
 </div>
 
 <script src="script.js"></script>
+
+<button id="scrollTopBtn">
+
+    <i class="fas fa-arrow-up"></i>
+
+</button>
 
 </body>
 </html>
