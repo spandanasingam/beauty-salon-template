@@ -95,3 +95,57 @@ function revealSections(){
 window.addEventListener("scroll", revealSections);
 
 revealSections();
+
+/// ==========================
+// Lightbox Gallery
+// ==========================
+
+const galleryLinks = document.querySelectorAll(".gallery-item a");
+
+const lightbox = document.getElementById("lightbox");
+
+const lightboxImage = document.getElementById("lightbox-image");
+
+galleryLinks.forEach((link) => {
+
+    link.addEventListener("click", (event) => {
+
+        event.preventDefault();
+
+        lightbox.classList.add("active");
+
+        lightboxImage.src = link.href;
+
+        lightboxImage.alt = link.querySelector("img").alt;
+
+    });
+
+});
+
+const closeBtn = document.querySelector(".close-btn");
+
+closeBtn.addEventListener("click", () => {
+
+    lightbox.classList.remove("active");
+
+});
+
+lightbox.addEventListener("click", (event) => {
+
+    if(event.target === lightbox){
+
+        lightbox.classList.remove("active");
+
+    }
+
+});
+
+document.addEventListener("keydown", (event) => {
+
+    if(event.key === "Escape"){
+
+        lightbox.classList.remove("active");
+
+    }
+
+});
