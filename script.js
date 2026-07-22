@@ -18,6 +18,22 @@ menuButton.addEventListener("click", () => {
 
 });
 
+const navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll",()=>{
+
+    if(window.scrollY>40){
+
+        navbar.classList.add("scrolled");
+
+    }else{
+
+        navbar.classList.remove("scrolled");
+
+    }
+
+});
+
 // Existing button alert
 const button = document.querySelector(".btn");
 
@@ -53,3 +69,29 @@ counters.forEach(counter => {
     updateCounter();
 
 });
+
+const reveals = document.querySelectorAll(".reveal");
+
+function revealSections(){
+
+    reveals.forEach(section=>{
+
+        const windowHeight = window.innerHeight;
+
+        const revealTop = section.getBoundingClientRect().top;
+
+        const revealPoint = 150;
+
+        if(revealTop < windowHeight - revealPoint){
+
+            section.classList.add("active");
+
+        }
+
+    });
+
+}
+
+window.addEventListener("scroll", revealSections);
+
+revealSections();
